@@ -14,7 +14,7 @@ class Splashscreen extends StatelessWidget {
      var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         height: height,
         width: width,
         child: Column(
@@ -22,10 +22,10 @@ class Splashscreen extends StatelessWidget {
           children: [
 
 
-            Image.network("https://namenayou.com/static/media/namenayou_logo.fa117933fcffd17f0d51.png",height: 250,width: 200 ,),
+            Image.asset("assets/images/Na-Me-Na-You.png",height: 350,width: 350 ,),
 
 
-            SizedBox(height: 50,),
+            const SizedBox(height: 50,),
             AnimatedTextKit(animatedTexts: [
               TyperAnimatedText(
                 "www.namenayou.com",
